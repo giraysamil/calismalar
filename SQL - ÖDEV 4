@@ -1,0 +1,3 @@
+select replacement_cost from film;
+select count(distinct replacement_cost) from film;
+select count(title) from film where title like 'T%' and rating = 'G';
