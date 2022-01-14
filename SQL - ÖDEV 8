@@ -1,4 +1,4 @@
-create table employee (id integer, name varchar(50), birthday date, email varchar(100));
+create table employee (id serial, name varchar(50), birthday date, email varchar(100));
 
 insert into employee (name, birthday, email) values ('Webb', '1961/01/04', 'wmattiessen0@dyndns.org');
 insert into employee (name, birthday, email) values ('Lanie', '1926/03/10', 'lzuan1@nymag.com');
