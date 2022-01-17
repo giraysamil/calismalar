@@ -5,4 +5,4 @@ select count(*) from film where rental_rate = (select max(rental_rate) from film
 select title from film where (rental_rate = (select min(rental_rate) from film)) and
 (replacement_cost = (select min(replacement_cost) from film));
 
-select customer_id from payment where amount = (select max(amount) from payment);
+select sum(amount), customer_id from payment group by customer_id order by sum desc;
